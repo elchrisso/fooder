@@ -6,17 +6,19 @@ import { NavLink } from 'react-router-dom'
 class AppHeader extends Component {
   render () {
     return (
-      <Navbar color="dark">
+      <Navbar color="faded" light toggleable>
         <NavbarBrand href="/">fooder</NavbarBrand>
         <Nav>
           <NavItem>
-            <NavLink to="/">home</NavLink>
+            <NavLink className="nav-link" to="/">create</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="https://google.com">googleTillItsCreateARecipe</NavLink>
+            <NavLink className="nav-link" to="/google.com">search</NavLink>
           </NavItem>
+        </Nav>
+        <Nav className="ml-auto">
           <NavItem>
-            <NavLink to="https://google.com">googleTillItsGroceries</NavLink>
+            <NavLink classname="nav-link" to="/google.com">login</NavLink>
           </NavItem>
         </Nav>
       </Navbar>
