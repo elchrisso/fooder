@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import  { Card, CardImg, CardBlock, CardSubtitle, Button, CardTitle, CardText } from 'reactstrap'
+import { NavLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 class FoodItem extends Component {
@@ -12,7 +13,9 @@ class FoodItem extends Component {
             <CardTitle>{this.props.foodName}</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>{this.props.foodDescription}</CardText>
-            <Button>Food Details</Button>
+            <Button color="success">
+              <NavLink to="/fooddetails">Food Details</NavLink>
+            </Button>
           </CardBlock>
         </Card>
       </div>
