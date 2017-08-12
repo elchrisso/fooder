@@ -10,15 +10,15 @@ class AppHeader extends Component {
         <NavbarBrand href="/">fooder</NavbarBrand>
         <Nav>
           <NavItem>
-            <NavLink className="nav-link" to="/">foods</NavLink>
+            <NavLink className="nav-link" to="/foods">foods</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/google.com">recipes</NavLink>
+            <NavLink className="nav-link" to="/recipes">recipes</NavLink>
           </NavItem>
         </Nav>
         <Nav className="ml-auto">
           <NavItem>
-            <NavLink classname="nav-link" to="/google.com">login</NavLink>
+            <NavLink classname="nav-link" to="/login">login</NavLink>
           </NavItem>
         </Nav>
       </Navbar>

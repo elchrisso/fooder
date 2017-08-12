@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { CardGroup } from 'reactstrap'
 
-import './Food.css'
-import FoodItem from './FoodItem'
+import './Foods.css'
+import FoodCard from './FoodCard'
 
 class FoodList extends Component {
   constructor () {
@@ -25,7 +25,7 @@ class FoodList extends Component {
       <div className="Food">
         <CardGroup>
           {this.state.foodItems.map((item) => {
-            return <FoodItem foodName={item.name} foodDescription={item.description}/>
+            return <FoodCard foodName={item.name} foodDescription={item.description}/>
           })}
         </CardGroup>
       </div>
