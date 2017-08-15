@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 class AppHeader extends Component {
   render () {
     return (
-      <Navbar color="faded" light toggleable>
+      <Navbar color="#5f5f5f" className="fixed-top navbar-header" light toggleable>
         <NavbarBrand href="/">fooder</NavbarBrand>
         <Nav>
           <NavItem>
