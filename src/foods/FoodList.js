@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import { CardGroup } from 'reactstrap'
+import { graphql } from 'react-apollo'
 
 import './Foods.css'
 import FoodCard from './FoodCard'
+
+import foodsService from './service'
 
 class FoodList extends Component {
   constructor () {
@@ -33,4 +36,7 @@ class FoodList extends Component {
   }
 }
 
-export default FoodList
+const withFoodQuery = graphql(foodsService.allFoods, {options:
+  {fetchPolicy: 'network-only' }})(FoodList)
+
+export default withFoodQuery
