@@ -14,7 +14,7 @@ class FoodCard extends Component {
             <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>{this.props.foodDescription}</CardText>
             <Button color="success">
-              <NavLink to="/fooddetails">Food Details</NavLink>
+              <NavLink to="/foods/details">Food Details</NavLink>
             </Button>
           </CardBlock>
         </Card>

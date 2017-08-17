@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 import { Navbar, Nav, NavItem, NavbarBrand } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 
-import './AppHeader.css'
+import './FooderNavs.css'
 
-class AppHeader extends Component {
+class FooderHeader extends Component {
   render () {
     return (
       <Navbar color="#5f5f5f" className="fixed-top navbar-header" light toggleable>
@@ -28,4 +28,4 @@ class AppHeader extends Component {
   }
 }
 
-export default AppHeader
+export default FooderHeader

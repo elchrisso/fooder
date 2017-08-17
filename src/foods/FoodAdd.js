@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { Form, FormGroup, Label, Input, Button } from 'reactstrap'
+import { graphql } from 'react-apollo'
+
+import foodsService from './service'
 
 class FoodAdd extends Component {
   constructor () {
@@ -9,10 +12,25 @@ class FoodAdd extends Component {
       description: ''
     }
   }
+
+  handleAddFood = (evt) => {
+    evt.preventDefault()
+    this.props.mutate({
+      variables: {
+        name: this.state.name,
+        description: this.state.description
+      }
+    }).then(() => {
+      alert("Food Added!")
+    }).catch(() => {
+      alert("error")
+    })
+  }
+
   render () {
     return (
       <div>
-        <Form onSubmit={console.log("Submitted!")}>
+        <Form onSubmit={this.handleAddFood}>
           <FormGroup>
             <Label for="food-name">Food Name</Label>
             <Input id="food-name" type="text" onChange={(evt) => this.setState({ name: evt.target.value })}/>
@@ -28,4 +46,4 @@ class FoodAdd extends Component {
   }
 }
 
-export default FoodAdd
+export default graphql(foodsService.createFood)(FoodAdd)
