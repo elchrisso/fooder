@@ -24,10 +24,20 @@ class FoodList extends Component {
   }
 
   render () {
+    let foods = null
+
+    if (this.props.data.loading) {
+      return <h1>Loading foods</h1>
+    }
+
+    if (this.props.data.allFoods) {
+      foods = this.props.data.allFoods
+    }
+
     return (
       <div className="Food">
         <CardGroup>
-          {this.state.foodItems.map((item) => {
+          {foods.map((item) => {
             return <FoodCard foodName={item.name} foodDescription={item.description}/>
           })}
         </CardGroup>

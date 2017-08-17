@@ -11,7 +11,7 @@
   height: 50%;
   width: 200px;
   flex-shrink: 1;
-
+  margin: 5px;
 }
 
 .Recipe-List {

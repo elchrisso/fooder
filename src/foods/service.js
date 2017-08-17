@@ -9,6 +9,25 @@ class foodsService {
       }
     }
   `
+  Food = gql`
+    query ($id: Int!) {
+      Food (id: $id) {
+        id
+        name
+        description
+      }
+    }
+  `
+
+  createFood = gql`
+    mutation ($name: String!, $description: String!) {
+      createFood (name: $name, description: $description) {
+        id
+        name
+        description
+      }
+    }
+  `
 }
 
 export default new foodsService()
