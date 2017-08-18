@@ -8,20 +8,6 @@ import FoodCard from './FoodCard'
 import foodsService from './service'
 
 class FoodList extends Component {
-  constructor () {
-    super ()
-    this.state = {
-      foodItems: [
-        {name: "apple", description: "mmm i like apples"},
-        {name: "orange", description: "orange you glad..."},
-        {name: "banana", description: "banana chips are the worst"},
-        {name: "bread", description: "fancy europeans"},
-        {name: "bananas", description: "good for the bananas, bad for the bread"},
-        {name: "beer", description: "carbload"},
-        {name: "bologna", description: "what a bunch of bologna"}
-      ]
-    }
-  }
 
   render () {
     let foods = null
@@ -35,10 +21,10 @@ class FoodList extends Component {
     }
 
     return (
-      <div className="Food">
+      <div className="Food-container">
         <CardGroup>
           {foods.map((item) => {
-            return <FoodCard foodName={item.name} foodDescription={item.description}/>
+            return <FoodCard foodName={item.name} foodDescription={item.description} foodId={item.id}/>
           })}
         </CardGroup>
       </div>

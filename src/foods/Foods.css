@@ -1,5 +1,8 @@
-.Food {
+.Food-container {
+  margin: auto;
   display: flex;
+  width: 80%;
+  height: 60%;
   flex-direction: column;
   align-items: center;
   align-content: center;
@@ -14,7 +17,6 @@
   margin: 5px;
 }
 
-.Recipe-List {
+.Food-recipes-list {
   width: 80%;
-  ;
 }

@@ -1,5 +1,7 @@
-.Recipe {
+.Recipe-container {
+  margin: auto;
   display: flex;
+  width: 80%;
   flex-direction: column;
   align-items: center;
   align-content: center;

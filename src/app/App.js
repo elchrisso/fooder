@@ -22,7 +22,7 @@ class App extends Component {
           <Switch className="App-content">
             <Route exact path="/" component={FooderFeed}/>
             <Route exact path="/foods/add" component={FoodAdd}/>
-            <Route exact path="/foods/details" component={FoodDetails}/>
+            <Route exact path="/foods/details/:id" component={FoodDetails}/>
             <Route path="/foods" component={FoodList}/>
 
             <Route exact path="/recipes/add" component={RecipeAdd}/>

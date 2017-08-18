@@ -4,6 +4,7 @@ class foodsService {
   allFoods = gql`
     query {
       allFoods {
+        id
         name
         description
       }

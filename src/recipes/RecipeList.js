@@ -7,7 +7,7 @@ import './Recipes.css'
 class RecipesList extends Component {
   render () {
     return (
-      <div className="Recipe">
+      <div className="Recipe-container">
         <CardGroup>
           <RecipeCard/>
           <RecipeCard/>

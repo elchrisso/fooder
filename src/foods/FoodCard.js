@@ -14,7 +14,7 @@ class FoodCard extends Component {
             <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>{this.props.foodDescription}</CardText>
             <Button color="success">
-              <NavLink to="/foods/details">Food Details</NavLink>
+              <NavLink to={`/foods/details/${this.props.foodId}`}>Food Details</NavLink>
             </Button>
           </CardBlock>
         </Card>
@@ -24,6 +24,7 @@ class FoodCard extends Component {
 }
 
 FoodCard.propTypes = {
+  foodId: PropTypes.string.isRequired,
   foodName: PropTypes.string.isRequired,
   foodDescription: PropTypes.string.isRequired
 }
