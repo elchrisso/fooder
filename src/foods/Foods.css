@@ -1,4 +1,4 @@
-.Food-container {
+.foodList-container {
   margin: auto;
   display: flex;
   width: 80%;
@@ -8,6 +8,17 @@
   align-content: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+
+.foodImage-medium {
+  max-width: 300px;
+  height: auto;
+}
+
+.foodDetails-container {
+  margin: auto;
+  width: 80%;
+  text-align: left;
 }
 
 .Food-Card {

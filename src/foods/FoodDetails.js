@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ListGroup, ListGroupItem, Badge } from 'reactstrap'
+import { ListGroup, ListGroupItem, Badge, Row, Col } from 'reactstrap'
 import { graphql } from 'react-apollo'
 
 import foodsService from './service'
@@ -13,12 +13,19 @@ class FoodDetails extends Component {
     }
 
     return (
-      <div>
-        <h1>{this.props.data.Food.name}</h1>
-        <p>{this.props.data.Food.description}</p>
-        <p>season</p>
-        <p>nutritional info</p>
-        <p>...other...</p>
+      <div className="foodDetails-container">
+        <Row>
+          <Col className="col-9">
+            <h1>{this.props.data.Food.name}</h1>
+            <p>{this.props.data.Food.description}</p>
+            <p>season</p>
+            <p>nutritional info</p>
+            <p>...other...</p>
+          </Col>
+          <Col className="col-3">
+            <img src={require('./anApple.jpg')} className="foodImage-medium"/>
+          </Col>
+        </Row>
         <ListGroup className="Food-recipes-list">
           <ListGroupItem className="justify-content-between">recipe 1, cooked up by...
             <Badge pill>14</Badge>

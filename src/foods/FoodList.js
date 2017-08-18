@@ -21,7 +21,7 @@ class FoodList extends Component {
     }
 
     return (
-      <div className="Food-container">
+      <div className="foodList-container">
         <CardGroup>
           {foods.map((item) => {
             return <FoodCard foodName={item.name} foodDescription={item.description} foodId={item.id}/>
