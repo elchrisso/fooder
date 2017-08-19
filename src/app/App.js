@@ -7,11 +7,12 @@ import FooderFooter from '../fooderNavs/FooderFooter'
 import FooderFeed from '../fooders/FooderFeed'
 import FoodList from '../foods/FoodList'
 import FoodAdd from '../foods/FoodAdd'
+import FoodDetails from '../foods/FoodDetails'
+import FoodEdit from '../foods/FoodDetails'
 import RecipeList from '../recipes/RecipeList'
 import RecipeDetails from '../recipes/RecipeDetails'
 import RecipeAdd from '../recipes/RecipeAdd'
 import Login from '../auth/Login'
-import FoodDetails from '../foods/FoodDetails'
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route exact path="/" component={FooderFeed}/>
             <Route exact path="/foods/add" component={FoodAdd}/>
             <Route exact path="/foods/details/:id" component={FoodDetails}/>
+            <Route exact path="/foods/edit/:id" component={FoodEdit}/>
             <Route path="/foods" component={FoodList}/>
 
             <Route exact path="/recipes/add" component={RecipeAdd}/>
