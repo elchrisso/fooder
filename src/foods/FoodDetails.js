@@ -26,6 +26,8 @@ class FoodDetails extends Component {
             <img src={require('./anApple.jpg')} className="foodImage-medium"/>
           </Col>
         </Row>
+
+        {/*this will be replaced with components generated from data retrieved by a recipesByIngredient recipesService query*/}
         <ListGroup className="Food-recipes-list">
           <ListGroupItem className="justify-content-between">recipe 1, cooked up by...
             <Badge pill>14</Badge>

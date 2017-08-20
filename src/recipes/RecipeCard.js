@@ -16,7 +16,7 @@ class RecipeCard extends Component {
             {/*<CardSubtitle>Card subtitle</CardSubtitle>*/}
             <CardText>{this.props.recipeDescription}</CardText>
             <Button color="success">
-              <NavLink to="/recipedetails">Recipe Details</NavLink>
+              <NavLink to={`/recipes/details/${this.props.recipeId}`}>Recipe Details</NavLink>
             </Button>
           </CardBlock>
         </Card>

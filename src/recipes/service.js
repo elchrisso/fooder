@@ -11,6 +11,17 @@ class recipesService {
       }
     }
   `
+
+  Recipe = gql`
+    query ($id: Int!) {
+      Recipe (id: $id) {
+        id
+        name
+        description
+        cookTime
+      }
+    }
+  `
 }
 
 export default new recipesService()
