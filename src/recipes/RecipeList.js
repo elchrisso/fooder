@@ -23,7 +23,7 @@ class RecipesList extends Component {
       <div>
         <CardGroup>
           {recipes.map((recipe) => {
-            return <RecipeCard recipeName={recipe.name} recipeDescription={recipe.description} recipeId={recipe.id}/>
+            return <RecipeCard recipeName={recipe.name} recipeDescription={recipe.description} recipeId={recipe.id} key={recipe.id}/>
           })}
         </CardGroup>
       </div>

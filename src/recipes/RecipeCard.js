@@ -26,7 +26,7 @@ class RecipeCard extends Component {
 }
 
 RecipeCard.propTypes = {
-  recipeId: PropTypes.string.isRequired,
+  recipeId: PropTypes.number.isRequired,
   recipeName: PropTypes.string.isRequired,
   recipeDescription: PropTypes.string.isRequired,
   //recipeCookTime: PropTypes.number.isRequired

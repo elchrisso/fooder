@@ -19,9 +19,13 @@ class RecipeDetails extends Component {
             <h1>{this.props.data.Recipe.name}</h1>
             <p>Time to prepare: {this.props.data.Recipe.cookTime} minutes.</p>
             <p>{this.props.data.Recipe.description}</p>
-            {/*<ul>*/}
-              {/*this is where the list of foods goes*/}
-            {/*</ul>*/}
+            {this.props.data.Recipe.Foods.map((food) => {
+              return (
+                <ul>
+                  <li>{food.name}</li>
+                </ul>
+              )
+            })}
           </Col>
           <Col className="col-3">
             <img src={require('./veg-curry.jpeg')} className="foodImage-medium"/>

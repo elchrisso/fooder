@@ -24,7 +24,7 @@ class FoodCard extends Component {
 }
 
 FoodCard.propTypes = {
-  foodId: PropTypes.string.isRequired,
+  foodId: PropTypes.number.isRequired,
   foodName: PropTypes.string.isRequired,
   foodDescription: PropTypes.string.isRequired
 }

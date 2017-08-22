@@ -19,6 +19,9 @@ class recipesService {
         name
         description
         cookTime
+        Foods {
+          name
+        }
       }
     }
   `
