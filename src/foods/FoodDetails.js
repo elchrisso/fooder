@@ -27,23 +27,15 @@ class FoodDetails extends Component {
           </Col>
         </Row>
 
-        {/*this will be replaced with components generated from data retrieved by a recipesByIngredient recipesService query*/}
         <ListGroup className="Food-recipes-list">
-          <ListGroupItem className="justify-content-between">recipe 1, cooked up by...
-            <Badge pill>14</Badge>
-          </ListGroupItem>
-          <ListGroupItem className="justify-content-between">recipe 2
-            <Badge pill>13</Badge>
-          </ListGroupItem>
-          <ListGroupItem className="justify-content-between">recipe 3
-            <Badge pill>3</Badge>
-          </ListGroupItem>
-          <ListGroupItem className="justify-content-between">recipe 4
-            <Badge pill>1</Badge>
-          </ListGroupItem>
-          <ListGroupItem className="justify-content-between">and so on
-            <Badge pill>1</Badge>
-          </ListGroupItem>
+          {this.props.data.Food.Recipes.map((recipe) => {
+            return (
+              <ListGroupItem className="justify-content-between">
+                {recipe.name}
+                <Badge pill>14</Badge>
+              </ListGroupItem>
+            )
+          })}
         </ListGroup>
       </div>
     )

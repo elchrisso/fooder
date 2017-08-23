@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col } from 'reactstrap'
+import { Row, Col, ListGroupItem, Badge } from 'reactstrap'
 import { graphql } from 'react-apollo'
 
 import recipesService from './service'
@@ -21,9 +21,10 @@ class RecipeDetails extends Component {
             <p>{this.props.data.Recipe.description}</p>
             {this.props.data.Recipe.Foods.map((food) => {
               return (
-                <ul>
-                  <li>{food.name}</li>
-                </ul>
+                <ListGroupItem className="justify-content-between">
+                  {food.name}
+                  <Badge pill>14</Badge>
+                </ListGroupItem>
               )
             })}
           </Col>

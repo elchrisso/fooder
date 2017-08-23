@@ -1,8 +1,35 @@
 import React, { Component } from 'react'
+import { Form, FormGroup, Label, Input, Button } from 'reactstrap'
 
 class RecipeAdd extends Component {
   render () {
-    return (<h1>RecipeAdd</h1>)
+    return (
+      <div>
+        <Form>
+          <FormGroup>
+            <Label>
+              <Input/>
+            </Label>
+          </FormGroup>
+          <FormGroup>
+            <Label>
+              <Input/>
+            </Label>
+          </FormGroup>
+          <FormGroup>
+            <Label>
+              <Input/>
+            </Label>
+          </FormGroup>
+          <FormGroup>
+            <Label>
+              <Input/>
+            </Label>
+          </FormGroup>
+          <Button/>
+        </Form>
+      </div>
+    )
   }
 }
 
