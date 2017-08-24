@@ -20,6 +20,7 @@ class recipesService {
         description
         cookTime
         Foods {
+          id
           name
         }
       }

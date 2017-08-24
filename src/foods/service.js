@@ -17,6 +17,7 @@ class foodsService {
         name
         description
         Recipes {
+          id
           name
         }
       }

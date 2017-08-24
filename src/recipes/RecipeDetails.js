@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col, ListGroupItem, Badge } from 'reactstrap'
 import { graphql } from 'react-apollo'
+import { NavLink } from 'react-router-dom'
 
 import recipesService from './service'
 
@@ -22,7 +23,7 @@ class RecipeDetails extends Component {
             {this.props.data.Recipe.Foods.map((food) => {
               return (
                 <ListGroupItem className="justify-content-between">
-                  {food.name}
+                  <NavLink className="nav-link" to={`/foods/details/${food.id}`}>{food.name}</NavLink>
                   <Badge pill>14</Badge>
                 </ListGroupItem>
               )
