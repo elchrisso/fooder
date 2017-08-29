@@ -20,7 +20,7 @@ class FooderHeader extends Component {
         </Nav>
         <Nav className="ml-auto">
           <NavItem>
-            <NavLink className="nav-link" to="/login">login</NavLink>
+            <NavLink className="nav-link" to="/fooders/login">login</NavLink>
           </NavItem>
         </Nav>
       </Navbar>
