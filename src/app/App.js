@@ -12,9 +12,11 @@ import FoodEdit from '../foods/FoodDetails'
 import RecipeList from '../recipes/RecipeList'
 import RecipeDetails from '../recipes/RecipeDetails'
 import RecipeAdd from '../recipes/RecipeAdd'
+
 import Login from '../auth/Login'
 
 import FooderAdd from '../fooders/FooderAdd'
+import FooderEdit from '../fooders/FooderEdit'
 
 class App extends Component {
 
@@ -48,6 +50,7 @@ class App extends Component {
 
             <Route exact path="/fooders/login" component={Login}/>
             <Route exact path="/fooders/add" component={FooderAdd}/>
+            <Route exact path="/fooders/edit/:id" component={FooderEdit}/>
 
           </Switch>
 

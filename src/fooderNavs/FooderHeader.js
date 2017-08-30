@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { withApollo } from 'react-apollo'
 
 import { Navbar, Nav, NavItem, NavbarBrand } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
@@ -7,6 +9,9 @@ import './FooderNavs.css'
 
 class FooderHeader extends Component {
   render () {
+    let userLink = "/fooders/login"
+    let userLinkText = "Login"
+
     return (
       <Navbar color="#5f5f5f" className="fixed-top navbar-header" light toggleable>
         <NavbarBrand href="/">fooder</NavbarBrand>
@@ -20,7 +25,7 @@ class FooderHeader extends Component {
         </Nav>
         <Nav className="ml-auto">
           <NavItem>
-            <NavLink className="nav-link" to="/fooders/login">login</NavLink>
+            <NavLink className="nav-link" to={userLink}>{userLinkText}</NavLink>
           </NavItem>
         </Nav>
       </Navbar>
@@ -28,4 +33,11 @@ class FooderHeader extends Component {
   }
 }
 
-export default FooderHeader
+const mapStateToProps = (state) => {
+  return {
+    token: state.auth.token,
+    userInfo: state.auth.userInfo
+  }
+}
+
+export default withApollo(connect(mapStateToProps)(FooderHeader))
