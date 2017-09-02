@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import  { Form, FormGroup, Label, Input, Button } from 'reactstrap'
 
 class FoodEdit extends Component {
   render () {
-    return null
+    return (
+      <p>FoodEdit</p>
+    )
   }
 }
 

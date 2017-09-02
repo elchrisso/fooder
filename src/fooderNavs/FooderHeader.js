@@ -1,3 +1,4 @@
+import './FooderNavs.css'
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { withApollo } from 'react-apollo'
@@ -5,12 +6,31 @@ import { withApollo } from 'react-apollo'
 import { Navbar, Nav, NavItem, NavbarBrand } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 
-import './FooderNavs.css'
+import {  } from '../auth/actions'
+import AuthService from '../auth/service'
+import { getAuthUser, getAuthUserSuccess, getAuthUserFail } from '../auth/actions'
 
 class FooderHeader extends Component {
+
+  componentWillMount () {
+    this.props.dispatch(getAuthUser())
+    this.props.client.query({
+      query: AuthService.loggedInUser
+    }).then((resp) => {
+      this.props.dispatch(getAuthUserSuccess((resp.data.loggedInUser)))
+    }).catch(((err) => {
+      this.props.dispatch(getAuthUserFail(err))
+    }))
+  }
+
   render () {
     let userLink = "/fooders/login"
     let userLinkText = "Login"
+    console.log("userInfo: " + this.props.userInfo)
+    if (this.props.userInfo !== null) {
+      userLinkText = this.props.userInfo.profile.fullName + "'s Account"
+      userLink = "/fooders/edit/" + this.props.userInfo.id
+    }
 
     return (
       <Navbar color="#5f5f5f" className="fixed-top navbar-header" light toggleable>
@@ -36,7 +56,8 @@ class FooderHeader extends Component {
 const mapStateToProps = (state) => {
   return {
     token: state.auth.token,
-    userInfo: state.auth.userInfo
+    userInfo: state.auth.userInfo,
+    userInfoError: state.auth.userInfoError
   }
 }
 

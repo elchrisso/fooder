@@ -12,6 +12,7 @@ import FoodEdit from '../foods/FoodDetails'
 import RecipeList from '../recipes/RecipeList'
 import RecipeDetails from '../recipes/RecipeDetails'
 import RecipeAdd from '../recipes/RecipeAdd'
+import RecipeEdit from '../recipes/RecipeEdit'
 
 import Login from '../auth/Login'
 
@@ -46,6 +47,7 @@ class App extends Component {
 
             <Route exact path="/recipes/add" component={RecipeAdd}/>
             <Route exact path="/recipes/details/:id" component={RecipeDetails}/>
+            <Route exact path="/recipes/edit/:id" component={RecipeEdit}/>
             <Route path="/recipes" component={RecipeList}/>
 
             <Route exact path="/fooders/login" component={Login}/>

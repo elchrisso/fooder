@@ -13,7 +13,7 @@ import store from './store'
 import registerServiceWorker from './registerServiceWorker'
 
 ReactDOM.render(
-  <ApolloProvider client={client} store={store}>
+  <ApolloProvider store={store} client={client}>
     <BrowserRouter>
       <App/>
     </BrowserRouter>

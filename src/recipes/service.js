@@ -34,6 +34,14 @@ class recipesService {
       }
     }
   `
+
+  updateRecipe = gql`
+    mutation ($id: Int!, $name: String, $description: String, $cookTime: Int) {
+      updateRecipe (id: $id, name: $name, description: $description, cookTime: $cookTime) {
+        id
+      }
+    }
+  `
 }
 
 export default new recipesService()

@@ -8,6 +8,17 @@ class AuthService {
       }
     }
   `
+
+  loggedInUser = gql`
+    query {
+      loggedInUser {
+        id
+        profile {
+          fullName
+        }
+      }
+    }
+  `
 }
 
 export default new AuthService()

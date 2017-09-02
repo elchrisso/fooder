@@ -34,6 +34,26 @@ export function reducer (state = initialState, action) {
         error: action.payload
       }
 
+    case actionTypes.GET_AUTH_USER:
+      return {
+        ...initialState,
+        loading: true
+      }
+
+    case actionTypes.GET_AUTH_USER_SUCCESS:
+      return {
+        ...initialState,
+        loading: false,
+        userInfo: action.payload
+      }
+
+    case actionTypes.GET_AUTH_USER_FAIL:
+      return {
+        ...initialState,
+        loading: false,
+        userInfoError: action.payload
+      }
+
     case actionTypes.LOGOUT:
       localStorage.removeItem('token')
       window.location.reload()
