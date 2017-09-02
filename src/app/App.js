@@ -56,7 +56,7 @@ class App extends Component {
 
           </Switch>
 
-          <button onClick={this.handleClick}>click me</button>
+          {/*<button onClick={this.handleClick}>click me</button>*/}
 
         </div>
         <FooderFooter/>

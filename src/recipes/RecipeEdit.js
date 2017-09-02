@@ -37,11 +37,11 @@ class RecipeEdit extends Component {
       <div>
         <Form onSubmit={this.handleSubmit}>
           <FormGroup>
-            <Label for="name"/>
+            <Label for="name">Recipe Name</Label>
             <Input id="name" type="text" onChange={(evt) => this.setState({ name: evt.target.value }) }/>
           </FormGroup>
           <FormGroup>
-            <Label for="description"/>
+            <Label for="description">Recipe description</Label>
             <Input id="description" type="textarea" onChange={(evt) => this.setState({ description: evt.target.value }) }/>
           </FormGroup>
           <FormGroup>

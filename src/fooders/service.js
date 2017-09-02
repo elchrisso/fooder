@@ -24,8 +24,10 @@ class foodersService {
   `
 
   createUser = gql`
-    mutation ($email: String!, $password: String!) {
-      createUser (email: $email, password: $password) {
+    mutation ($email: String!, $password: String!, $fullName: String!) {
+      createUser (email: $email, password: $password, profile: {
+        fullName: $fullName
+      }) {
         id
       }
     }

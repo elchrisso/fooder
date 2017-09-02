@@ -7,6 +7,7 @@ class FooderAddForm extends Component {
   constructor () {
     super ()
     this.state = {
+      fullName: '',
       email: '',
       password: '',
       confirmPassword: ''
@@ -25,6 +26,10 @@ class FooderAddForm extends Component {
   render () {
     return (
       <Form onSubmit={this.handleSubmit}>
+        <FormGroup>
+          <Label for="fullName">What's your name fooder?</Label>
+          <Input type="text" id="fullName" onChange={(evt) => this.setState({ fullName: evt.target.value }) }/>
+        </FormGroup>
         <FormGroup>
           <Label for="email">Email</Label>
           <Input type="text" id="email" onChange={(evt) => this.setState({ email: evt.target.value }) }/>

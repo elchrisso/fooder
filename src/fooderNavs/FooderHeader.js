@@ -6,7 +6,6 @@ import { withApollo } from 'react-apollo'
 import { Navbar, Nav, NavItem, NavbarBrand } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 
-import {  } from '../auth/actions'
 import AuthService from '../auth/service'
 import { getAuthUser, getAuthUserSuccess, getAuthUserFail } from '../auth/actions'
 
@@ -24,6 +23,7 @@ class FooderHeader extends Component {
   }
 
   render () {
+    console.log("rendering header nav")
     let userLink = "/fooders/login"
     let userLinkText = "Login"
     console.log("userInfo: " + this.props.userInfo)

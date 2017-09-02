@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom'
 
 class FooderFooter extends Component {
   render () {
+    console.log("rendering footer nav")
+
     return (
       <Navbar color="#5f5f5f" className="fixed-bottom navbar-header" light toggleable>
         <Nav>
