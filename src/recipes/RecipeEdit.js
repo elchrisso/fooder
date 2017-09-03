@@ -33,20 +33,26 @@ class RecipeEdit extends Component {
   }
 
   render () {
+    if (this.props.data.loading) {
+      return (
+        <p>loading...</p>
+      )
+    }
+
     return (
       <div>
         <Form onSubmit={this.handleSubmit}>
           <FormGroup>
             <Label for="name">Recipe Name</Label>
-            <Input id="name" type="text" onChange={(evt) => this.setState({ name: evt.target.value }) }/>
+            <Input id="name" type="text" defaultValue={this.props.data.Recipe.name} onChange={(evt) => this.setState({ name: evt.target.value }) }/>
           </FormGroup>
           <FormGroup>
             <Label for="description">Recipe description</Label>
-            <Input id="description" type="textarea" onChange={(evt) => this.setState({ description: evt.target.value }) }/>
+            <Input id="description" type="textarea" defaultValue={this.props.data.Recipe.description} onChange={(evt) => this.setState({ description: evt.target.value }) }/>
           </FormGroup>
           <FormGroup>
             <Label for="cookTime">Cook Time (Some Number in Minutes)</Label>
-            <Input id="cookTime" type="number" onChange={(evt) => this.setState({ cookTime: evt.target.value }) }/>
+            <Input id="cookTime" type="number" defaultValue={this.props.data.Recipe.cookTime} onChange={(evt) => this.setState({ cookTime: evt.target.value }) }/>
           </FormGroup>
           <Button type="submit" color="success">Submit Recipe Changes</Button>
         </Form>
@@ -61,6 +67,6 @@ const withRecipe = graphql(RecipesService.Recipe,
       id: ownProps.match.params.id
     }
   })}
-)(RecipeEdit)
+  )(RecipeEdit)
 
 export default graphql(RecipesService.updateRecipe)(withRecipe)

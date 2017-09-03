@@ -19,6 +19,10 @@ class foodersService {
         email
         createdAt
         updatedAt
+        profile {
+          fullName
+          fullAddress
+        }
       }
     }
   `
@@ -29,6 +33,15 @@ class foodersService {
         fullName: $fullName
       }) {
         id
+      }
+    }
+  `
+
+  updateProfile = gql`
+    mutation ($id: Int!, $fullName: String) {
+      updateProfile (id: $id, fullName: $fullName) {
+        id
+        fullName
       }
     }
   `

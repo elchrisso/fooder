@@ -28,7 +28,7 @@ class RecipeDetails extends Component {
                 </ListGroupItem>
               )
             })}
-            <NavLink className="nav-link" to={`/recipes/edit/${this.props.data.Recipe.name}`}>Edit {this.props.data.Recipe.name}</NavLink>
+            <NavLink className="nav-link" to={`/recipes/edit/${this.props.data.Recipe.id}`}>Edit {this.props.data.Recipe.name}</NavLink>
           </Col>
           <Col className="col-3">
             <img src={require('./veg-curry.jpeg')} className="foodImage-medium"/>
