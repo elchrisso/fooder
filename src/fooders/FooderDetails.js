@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Button, Row, Col, Label, Form, FormGroup, Input } from 'reactstrap'
 import { graphql } from 'react-apollo'
+import { Redirect } from 'react-router-dom'
 
 import FooderService from './service'
-import { logout } from '../auth/actions'
 import LogoutButton from '../auth/LogoutButton'
 
 class FooderDetails extends Component {
@@ -34,18 +34,21 @@ class FooderDetails extends Component {
     })
   }
 
-  handleLogout = () => {
-    this.props.dispatch(logout())
-  }
-
   render () {
     if (this.props.data.loading) {
       return (<p>loading...</p>)
     }
+
+    if (localStorage.token === null || localStorage.token === undefined) {
+      return (
+        <Redirect to="/fooders/login"/>
+      )
+    }
+
     return (
       <div>
         <Row>
-          <Col className="col-9">
+          <Col className="col-8">
             <Form onSubmit={this.handleSubmitAccountEdits}>
               <FormGroup>
                 <Label to="fullName">Name</Label>
@@ -54,7 +57,7 @@ class FooderDetails extends Component {
               <Button color="success">Submit Changes</Button>
             </Form>
           </Col>
-          <Col className="col-3">
+          <Col className="col-4">
             <LogoutButton/>
           </Col>
         </Row>

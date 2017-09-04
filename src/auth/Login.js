@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { Container, Row, Col, Card, CardHeader, CardBlock, Alert } from 'reactstrap'
 import { graphql } from 'react-apollo'
 import { connect } from 'react-redux'
+import { Redirect } from 'react-router-dom'
 
 import LoginForm from './LoginForm'
 import AuthService from './service'
@@ -18,11 +19,17 @@ class Login extends Component {
       console.log("login success!")
     }).catch((error) => {
       this.props.dispatch(loginError(error.message))
-      console.log("login failure")
+      alert("Account not found, maybe you need to create one?")
     })
   }
 
   render () {
+    if (localStorage.token !== null && localStorage.token !== undefined) {
+      return (
+        <Redirect to="/"/>
+      )
+    }
+
     return (
       <Container className="login-container">
         <Row>

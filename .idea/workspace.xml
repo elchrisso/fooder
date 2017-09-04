@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f220c401-6a45-4298-a1b8-640cdbe7b66b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/auth/LogoutButton.js" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/fooders/FooderEdit.js" afterPath="$PROJECT_DIR$/src/fooders/FooderDetails.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/App.js" afterPath="$PROJECT_DIR$/src/app/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auth/Login.js" afterPath="$PROJECT_DIR$/src/auth/Login.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,26 +20,28 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.5101553">
       <split-first>
         <leaf>
-          <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/auth/reducer.js">
+          <file leaf-file-name="FooderDetails.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/fooders/FooderDetails.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="307">
-                  <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-                  <folding />
+                <state relative-caret-position="448">
+                  <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FooderDetails.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/fooders/FooderDetails.js">
+          <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/auth/Login.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="930">
-                  <caret line="57" column="27" lean-forward="false" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+                <state relative-caret-position="444">
+                  <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="29" selection-end-column="7" />
                   <folding>
-                    <element signature="e#0#40#0" expanded="true" />
+                    <element signature="e#0#20#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -47,7 +51,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="LogoutButton.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="LogoutButton.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/auth/LogoutButton.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="240">
@@ -55,6 +59,16 @@
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="reducer.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/auth/reducer.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="115">
+                  <caret line="24" column="51" lean-forward="false" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -130,12 +144,10 @@
         <option value="$PROJECT_DIR$/src/app/reducer.js" />
         <option value="$PROJECT_DIR$/src/store.js" />
         <option value="$PROJECT_DIR$/src/fooders/FooderAdd.js" />
-        <option value="$PROJECT_DIR$/src/auth/reducer.js" />
         <option value="$PROJECT_DIR$/src/auth/service.js" />
         <option value="$PROJECT_DIR$/src/client.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/auth/actions.js" />
-        <option value="$PROJECT_DIR$/src/auth/Login.js" />
         <option value="$PROJECT_DIR$/src/foods/FoodList.js" />
         <option value="$PROJECT_DIR$/src/foods/FoodEdit.js" />
         <option value="$PROJECT_DIR$/src/recipes/service.js" />
@@ -150,8 +162,10 @@
         <option value="$PROJECT_DIR$/src/recipes/RecipeEdit.js" />
         <option value="$PROJECT_DIR$/src/fooders/service.js" />
         <option value="$PROJECT_DIR$/src/fooders/FooderEdit.js" />
-        <option value="$PROJECT_DIR$/src/fooders/FooderDetails.js" />
         <option value="$PROJECT_DIR$/src/auth/LogoutButton.js" />
+        <option value="$PROJECT_DIR$/src/auth/reducer.js" />
+        <option value="$PROJECT_DIR$/src/auth/Login.js" />
+        <option value="$PROJECT_DIR$/src/fooders/FooderDetails.js" />
       </list>
     </option>
   </component>
@@ -167,7 +181,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1196" />
+    <option name="width" value="1067" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -461,18 +475,18 @@
       <workItem from="1503090579633" duration="21448000" />
       <workItem from="1503768189082" duration="5798000" />
       <workItem from="1503962728329" duration="1107000" />
-      <workItem from="1503969699257" duration="40817000" />
+      <workItem from="1503969699257" duration="42926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103206000" />
+    <option name="totallyTimeSpent" value="105315000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1196" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1067" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17787234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19980879" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21566264" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -836,14 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auth/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/foods/FoodDetails.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -1105,24 +1111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auth/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fooders/FooderDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="57" column="27" lean-forward="false" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/auth/actions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
@@ -1135,6 +1123,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auth/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="24" column="51" lean-forward="false" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auth/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fooders/FooderDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
