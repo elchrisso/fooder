@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, FormGroup, Label, Input, Button } from 'reactstrap'
+import { Form, FormGroup, Label, Input, Button, InputGroup } from 'reactstrap'
 import { graphql } from 'react-apollo'
 
 import recipesService from './service'
@@ -11,8 +11,15 @@ class RecipeAdd extends Component {
       name: '',
       description: '',
       cookTime: '',
-      foods: ''
+      newIngredientId: '',
+      foodIds: []
     }
+  }
+
+  handleAddIngredient = (evt) => {
+    this.setState({
+      foodIds: [...this.state.foodIds, this.state.newIngredientId]
+    })
   }
 
   handleAddRecipe = (evt) => {
@@ -22,7 +29,7 @@ class RecipeAdd extends Component {
         name: this.state.name,
         description: this.state.description,
         cookTime: this.state.cookTime,
-        foods: this.state.foods
+        foodIds: this.state.foodIds
       }
     })
   }
@@ -43,11 +50,15 @@ class RecipeAdd extends Component {
             <Label for="cook-time">CookTime in Minutes</Label>
             <Input id="cook-time" type="number" onChange={(evt) => this.setState({ cookTime: evt.target.value }) }/>
           </FormGroup>
+          <Form onSubmit={this.handleAddIngredient}>
+            <InputGroup>
+              <Input id="food-to-add" type="number" onChange={(evt) => this.setState({ newIngredientId: evt.target.value }) }/>
+              <Button type="submit">Add It</Button>
+            </InputGroup>
+          </Form>
           <FormGroup>
-            <Label for="required-foods">Required Foods</Label>
-            <Input id="required-foods" type="text"/>
+            <Button color="success">Add Recipe</Button>
           </FormGroup>
-          <Button color="success">Add Recipe</Button>
         </Form>
       </div>
 
