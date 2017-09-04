@@ -3,8 +3,10 @@ import { Button, Row, Col, Label, Form, FormGroup, Input } from 'reactstrap'
 import { graphql } from 'react-apollo'
 
 import FooderService from './service'
+import { logout } from '../auth/actions'
+import LogoutButton from '../auth/LogoutButton'
 
-class FooderEdit extends Component {
+class FooderDetails extends Component {
   constructor() {
     super()
     this.state = {
@@ -18,16 +20,22 @@ class FooderEdit extends Component {
       variables: {
         id: this.props.data.User.id,
         ...this.state
-      }
+      },
+      refetchQueries: [{
+        query: FooderService.User,
+        id: this.props.id
+      }]
     }).then(() => {
-      alert('Account information edited!')
+      //alert('Account information edited!')
+      window.location.reload()
     }).catch((err) => {
+      window.location.reload()
       alert(err)
     })
   }
 
   handleLogout = () => {
-    alert("Loggin out yo!")
+    this.props.dispatch(logout())
   }
 
   render () {
@@ -47,9 +55,7 @@ class FooderEdit extends Component {
             </Form>
           </Col>
           <Col className="col-3">
-            <Form onSubmit={this.handleLogout}>
-              <Button type="submit" color="danger">Log Out</Button>
-            </Form>
+            <LogoutButton/>
           </Col>
         </Row>
       </div>
@@ -61,8 +67,9 @@ const withUser = graphql(FooderService.User,
   { options: (ownProps) => ({
     variables: {
       id: ownProps.match.params.id
-    }
+    },
+    fetchPolicy: 'network-only'
   })}
-  )(FooderEdit)
+  )(FooderDetails)
 
 export default graphql(FooderService.updateProfile)(withUser)

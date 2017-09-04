@@ -17,7 +17,7 @@ import RecipeEdit from '../recipes/RecipeEdit'
 import Login from '../auth/Login'
 
 import FooderAdd from '../fooders/FooderAdd'
-import FooderEdit from '../fooders/FooderEdit'
+import FooderEdit from '../fooders/FooderDetails'
 
 class App extends Component {
 
