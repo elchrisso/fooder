@@ -28,6 +28,7 @@ class RecipeAdd extends Component {
       variables: {
         name: this.state.name,
         description: this.state.description,
+        userId: '',
         cookTime: this.state.cookTime,
         foodIds: this.state.foodIds
       }

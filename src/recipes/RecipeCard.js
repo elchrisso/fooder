@@ -14,6 +14,7 @@ class RecipeCard extends Component {
           <CardBlock>
             <CardTitle>{this.props.recipeName}</CardTitle>
             {/*<CardSubtitle>Card subtitle</CardSubtitle>*/}
+            <CardText/>
             <CardText>{this.props.recipeDescription}</CardText>
             <Button color="success">
               <NavLink to={`/recipes/details/${this.props.recipeId}`}>Recipe Details</NavLink>
@@ -29,7 +30,8 @@ RecipeCard.propTypes = {
   recipeId: PropTypes.number.isRequired,
   recipeName: PropTypes.string.isRequired,
   recipeDescription: PropTypes.string.isRequired,
-  //recipeCookTime: PropTypes.number.isRequired
+  recipeCreator: PropTypes.string.isRequired,
+  recipeCookTime: PropTypes.number.isRequired
 }
 
 export default RecipeCard
