@@ -3,16 +3,29 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { withApollo } from 'react-apollo'
 
-import { Navbar, Nav, NavItem, NavbarBrand } from 'reactstrap'
+import { Navbar, Nav, NavItem, NavbarBrand, Button } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 
 import AuthService from '../auth/service'
 import { getAuthUser, getAuthUserSuccess, getAuthUserFail } from '../auth/actions'
 
 class FooderHeader extends Component {
+  constructor () {
+    super()
+    this.state= {
+      bitOState: ''
+    }
+  }
+
+  componentWillReceiveProps (nextProps) {
+    if (nextProps !== this.props) {
+      this.setState({rerender: nextProps.bitOState})
+    }
+  }
 
   componentWillMount () {
     this.props.dispatch(getAuthUser())
+
     this.props.client.query({
       query: AuthService.loggedInUser
     }).then((resp) => {
@@ -48,6 +61,7 @@ class FooderHeader extends Component {
             <NavLink className="nav-link" to={userLink}>{userLinkText}</NavLink>
           </NavItem>
         </Nav>
+        <Button type="button" onClick={(evt) => this.setState({ bitOState: "update" })}>clickMe</Button>
       </Navbar>
     )
   }

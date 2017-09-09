@@ -8,7 +8,7 @@ class recipesService {
         name
         description
         cookTime
-        userId {
+        User {
           profile {
             fullName
           }
@@ -22,7 +22,7 @@ class recipesService {
       Recipe (id: $id) {
         id
         name
-        userId {
+        User {
           profile {
             fullName
           }
@@ -38,8 +38,8 @@ class recipesService {
   `
 
   addRecipe = gql`
-    mutation ($name: String!, $userId: Int! $description: String!, $cookTime: Int!, $foodIds: [Int!]!) {
-      createRecipe (name: $name, userId: $userId, description: $description, cookTime: $cookTime, foodIds: $foodIds) {
+    mutation ($name: String!, $createdByUserId: Int! $description: String!, $cookTime: Int!, $foodIds: [Int!]!) {
+      createRecipe (name: $name, createdByUserId: $createdByUserId, description: $description, cookTime: $cookTime, foodIds: $foodIds) {
         id
       }
     }

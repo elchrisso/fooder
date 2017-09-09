@@ -39,7 +39,7 @@ class FoodAdd extends Component {
             <Label for="food-description">Food Description</Label>
             <Input id="food-description" type="textarea" onChange={(evt) => this.setState({ description: evt.target.value })}/>
           </FormGroup>
-          <Button type="submit" color="success">Create Food</Button>
+          <Button type="submit" id="add-food-button" color="success">Create Food</Button>
         </Form>
       </div>
     )

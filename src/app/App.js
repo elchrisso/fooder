@@ -45,7 +45,7 @@ class App extends Component {
             <Route exact path="/foods/edit/:id" component={FoodEdit}/>
             <Route path="/foods" component={FoodList}/>
 
-            <Route exact path="/recipes/add" component={RecipeAdd}/>
+            <Route exact path="/recipes/add/:id" component={RecipeAdd}/>
             <Route exact path="/recipes/details/:id" component={RecipeDetails}/>
             <Route exact path="/recipes/edit/:id" component={RecipeEdit}/>
             <Route path="/recipes" component={RecipeList}/>
@@ -56,7 +56,7 @@ class App extends Component {
 
           </Switch>
 
-          {/*<button onClick={this.handleClick}>click me</button>*/}
+          <button onClick={this.handleClick}>click me</button>
 
         </div>
         <FooderFooter/>

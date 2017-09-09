@@ -10,7 +10,7 @@ class FooderFooter extends Component {
       <Navbar color="#5f5f5f" className="fixed-bottom navbar-header" light toggleable>
         <Nav>
           <NavItem>
-            <NavLink className="nav-link" to="/foods/add">Add Food</NavLink>
+            <NavLink className="nav-link" id="add-food-link" to="/foods/add">Add Food</NavLink>
           </NavItem>
           <NavItem>
             <NavLink className="nav-link" to="/recipes/add">Add Recipe</NavLink>

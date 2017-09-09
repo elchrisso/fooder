@@ -19,7 +19,7 @@ class RecipeDetails extends Component {
           <Col className="col-9">
             <h1>{this.props.data.Recipe.name}</h1>
             <p>Time to prepare: {this.props.data.Recipe.cookTime} minutes.</p>
-            <p>Created by: {this.props.data.Recipe.userId.profile.fullName}</p>
+            <p>Created by: {this.props.data.Recipe.User.profile.fullName}</p>
             <p>{this.props.data.Recipe.description}</p>
             {this.props.data.Recipe.Foods.map((food) => {
               return (
