@@ -13,7 +13,7 @@ class RecipeCard extends Component {
           <CardImg top width="100%" src={require('./veg-curry.jpeg')} alt="Card image cap" />
           <CardBlock>
             <CardTitle>{this.props.recipeName}</CardTitle>
-            {/*<CardSubtitle>Card subtitle</CardSubtitle>*/}
+            <CardSubtitle>{this.props.recipeCreator}</CardSubtitle>
             <CardText/>
             <CardText>{this.props.recipeDescription}</CardText>
             <Button color="success">

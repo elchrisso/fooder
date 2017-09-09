@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f220c401-6a45-4298-a1b8-640cdbe7b66b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/selenium-debug.log" afterPath="$PROJECT_DIR$/reports/selenium-debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auth/Login.js" afterPath="$PROJECT_DIR$/src/auth/Login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fooderNavs/FooderHeader.js" afterPath="$PROJECT_DIR$/src/fooderNavs/FooderHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/recipes/RecipeCard.js" afterPath="$PROJECT_DIR$/src/recipes/RecipeCard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/recipes/RecipeList.js" afterPath="$PROJECT_DIR$/src/recipes/RecipeList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/pages/index.js" afterPath="$PROJECT_DIR$/tests/pages/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,118 +17,126 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="RecipeCard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/recipes/RecipeCard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecipeList.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/recipes/RecipeList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" column="121" lean-forward="false" selection-start-line="25" selection-start-column="121" selection-end-line="25" selection-end-column="121" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/recipes/service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
-              <folding>
-                <marker date="1504752368000" expanded="true" signature="83:262" ph="query...{&#10;      allRecipes {&#10;        id&#10;        name&#10;        description&#10;        cookTime&#10;      }&#10;    }" />
-                <marker date="1504752368000" expanded="true" signature="89:262" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="97:107" ph="allRecipes...allRecipes" />
-                <marker date="1504752368000" expanded="true" signature="97:256" ph="allRecipes...{&#10;        id&#10;        name&#10;        description&#10;        cookTime&#10;      }" />
-                <marker date="1504752368000" expanded="true" signature="108:256" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="118:120" ph="id...id" />
-                <marker date="1504752368000" expanded="true" signature="129:133" ph="name...name" />
-                <marker date="1504752368000" expanded="true" signature="142:153" ph="description...description" />
-                <marker date="1504752368000" expanded="true" signature="162:170" ph="cookTime...cookTime" />
-                <marker date="1504752368000" expanded="true" signature="179:183" ph="User...User" />
-                <marker date="1504752368000" expanded="true" signature="179:248" ph="User...{&#10;          profile {&#10;            fullName&#10;          }&#10;        }" />
-                <marker date="1504752368000" expanded="true" signature="183:248" ph="userId...{&#10;          profile {&#10;            fullName&#10;          }&#10;        }" />
-                <marker date="1504752368000" expanded="true" signature="184:248" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="196:203" ph="profile...profile" />
-                <marker date="1504752368000" expanded="true" signature="196:238" ph="profile...{&#10;            fullName&#10;          }" />
-                <marker date="1504752368000" expanded="true" signature="204:238" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="218:226" ph="fullName...fullName" />
-                <marker date="1504752368000" expanded="true" signature="288:539" ph="query...{&#10;      Recipe (id: $id) {&#10;        id&#10;        name&#10;        description&#10;        cookTime&#10;      }&#10;    }" />
-                <marker date="1504752368000" expanded="true" signature="294:305" ph="(...)" />
-                <marker date="1504752368000" expanded="true" signature="300:303" ph="Int...Int" />
-                <marker date="1504752368000" expanded="true" signature="306:539" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="314:320" ph="Recipe...Recipe" />
-                <marker date="1504752368000" expanded="true" signature="314:533" ph="Recipe...{&#10;        id&#10;        name&#10;        description&#10;        cookTime&#10;      }" />
-                <marker date="1504752368000" expanded="true" signature="321:330" ph="(...)" />
-                <marker date="1504752368000" expanded="true" signature="322:324" ph="id...id" />
-                <marker date="1504752368000" expanded="true" signature="331:533" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="341:343" ph="id...id" />
-                <marker date="1504752368000" expanded="true" signature="352:356" ph="name...name" />
-                <marker date="1504752368000" expanded="true" signature="365:369" ph="User...User" />
-                <marker date="1504752368000" expanded="true" signature="365:434" ph="User...{&#10;          profile {&#10;            fullName&#10;          }&#10;        }" />
-                <marker date="1504752368000" expanded="true" signature="369:434" ph="userId...{&#10;          profile {&#10;            fullName&#10;          }&#10;        }" />
-                <marker date="1504752368000" expanded="true" signature="370:434" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="382:389" ph="profile...profile" />
-                <marker date="1504752368000" expanded="true" signature="382:424" ph="profile...{&#10;            fullName&#10;          }" />
-                <marker date="1504752368000" expanded="true" signature="390:424" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="404:412" ph="fullName...fullName" />
-                <marker date="1504752368000" expanded="true" signature="443:454" ph="description...description" />
-                <marker date="1504752368000" expanded="true" signature="463:471" ph="cookTime...cookTime" />
-                <marker date="1504752368000" expanded="true" signature="480:485" ph="Foods...Foods" />
-                <marker date="1504752368000" expanded="true" signature="480:525" ph="Foods...{&#10;          name&#10;        }" />
-                <marker date="1504752368000" expanded="true" signature="486:525" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="498:500" ph="id...id" />
-                <marker date="1504752368000" expanded="true" signature="511:515" ph="name...name" />
-                <marker date="1504752368000" expanded="true" signature="568:839" ph="mutation...{&#10;      createRecipe (name: $name, description: $description, cookTime: $cookTime, foodIds: [1, 2, 9]) {&#10;        id&#10;      }&#10;    }" />
-                <marker date="1504752368000" expanded="true" signature="577:675" ph="(...)" />
-                <marker date="1504752368000" expanded="true" signature="585:591" ph="String...String" />
-                <marker date="1504752368000" expanded="true" signature="612:615" ph="Int...Int" />
-                <marker date="1504752368000" expanded="true" signature="631:637" ph="String...String" />
-                <marker date="1504752368000" expanded="true" signature="651:654" ph="Int...Int" />
-                <marker date="1504752368000" expanded="true" signature="667:673" ph="[...]" />
-                <marker date="1504752368000" expanded="true" signature="668:671" ph="Int...Int" />
-                <marker date="1504752368000" expanded="true" signature="676:839" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="684:696" ph="createRecipe...createRecipe" />
-                <marker date="1504752368000" expanded="true" signature="684:833" ph="createRecipe...{&#10;        id&#10;      }" />
-                <marker date="1504752368000" expanded="true" signature="697:812" ph="(...)" />
-                <marker date="1504752368000" expanded="true" signature="698:702" ph="name...name" />
-                <marker date="1504752368000" expanded="true" signature="711:726" ph="createdByUserId...createdByUserId" />
-                <marker date="1504752368000" expanded="true" signature="746:757" ph="description...description" />
-                <marker date="1504752368000" expanded="true" signature="773:781" ph="cookTime...cookTime" />
-                <marker date="1504752368000" expanded="true" signature="794:801" ph="foodIds...foodIds" />
-                <marker date="1504752368000" expanded="true" signature="794:803" ph="foodIds...[1, 2, 9]" />
-                <marker date="1504752368000" expanded="true" signature="813:833" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="823:825" ph="id...id" />
-                <marker date="1504752368000" expanded="true" signature="871:1063" ph="mutation...{&#10;      updateRecipe (id: $id, name: $name, description: $description, cookTime: $cookTime) {&#10;        id&#10;      }&#10;    }" />
-                <marker date="1504752368000" expanded="true" signature="880:944" ph="(...)" />
-                <marker date="1504752368000" expanded="true" signature="886:889" ph="Int...Int" />
-                <marker date="1504752368000" expanded="true" signature="899:905" ph="String...String" />
-                <marker date="1504752368000" expanded="true" signature="921:927" ph="String...String" />
-                <marker date="1504752368000" expanded="true" signature="940:943" ph="Int...Int" />
-                <marker date="1504752368000" expanded="true" signature="945:1063" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="953:965" ph="updateRecipe...updateRecipe" />
-                <marker date="1504752368000" expanded="true" signature="953:1057" ph="updateRecipe...{&#10;        id&#10;      }" />
-                <marker date="1504752368000" expanded="true" signature="966:1036" ph="(...)" />
-                <marker date="1504752368000" expanded="true" signature="967:969" ph="id...id" />
-                <marker date="1504752368000" expanded="true" signature="976:980" ph="name...name" />
-                <marker date="1504752368000" expanded="true" signature="989:1000" ph="description...description" />
-                <marker date="1504752368000" expanded="true" signature="1016:1024" ph="cookTime...cookTime" />
-                <marker date="1504752368000" expanded="true" signature="1037:1057" ph="{...}" />
-                <marker date="1504752368000" expanded="true" signature="1047:1049" ph="id...id" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="RecipeCard.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/recipes/RecipeCard.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RecipeList.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/recipes/RecipeList.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="25" column="138" lean-forward="false" selection-start-line="25" selection-start-column="138" selection-end-line="25" selection-end-column="138" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="service.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/recipes/service.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="563">
+                  <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+                  <folding>
+                    <marker date="1504752368000" expanded="true" signature="83:262" ph="query...{&#10;      allRecipes {&#10;        id&#10;        name&#10;        description&#10;        cookTime&#10;      }&#10;    }" />
+                    <marker date="1504752368000" expanded="true" signature="89:262" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="97:107" ph="allRecipes...allRecipes" />
+                    <marker date="1504752368000" expanded="true" signature="97:256" ph="allRecipes...{&#10;        id&#10;        name&#10;        description&#10;        cookTime&#10;      }" />
+                    <marker date="1504752368000" expanded="true" signature="108:256" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="118:120" ph="id...id" />
+                    <marker date="1504752368000" expanded="true" signature="129:133" ph="name...name" />
+                    <marker date="1504752368000" expanded="true" signature="142:153" ph="description...description" />
+                    <marker date="1504752368000" expanded="true" signature="162:170" ph="cookTime...cookTime" />
+                    <marker date="1504752368000" expanded="true" signature="179:183" ph="User...User" />
+                    <marker date="1504752368000" expanded="true" signature="179:248" ph="User...{&#10;          profile {&#10;            fullName&#10;          }&#10;        }" />
+                    <marker date="1504752368000" expanded="true" signature="183:248" ph="userId...{&#10;          profile {&#10;            fullName&#10;          }&#10;        }" />
+                    <marker date="1504752368000" expanded="true" signature="184:248" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="196:203" ph="profile...profile" />
+                    <marker date="1504752368000" expanded="true" signature="196:238" ph="profile...{&#10;            fullName&#10;          }" />
+                    <marker date="1504752368000" expanded="true" signature="204:238" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="218:226" ph="fullName...fullName" />
+                    <marker date="1504752368000" expanded="true" signature="288:539" ph="query...{&#10;      Recipe (id: $id) {&#10;        id&#10;        name&#10;        description&#10;        cookTime&#10;      }&#10;    }" />
+                    <marker date="1504752368000" expanded="true" signature="294:305" ph="(...)" />
+                    <marker date="1504752368000" expanded="true" signature="300:303" ph="Int...Int" />
+                    <marker date="1504752368000" expanded="true" signature="306:539" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="314:320" ph="Recipe...Recipe" />
+                    <marker date="1504752368000" expanded="true" signature="314:533" ph="Recipe...{&#10;        id&#10;        name&#10;        description&#10;        cookTime&#10;      }" />
+                    <marker date="1504752368000" expanded="true" signature="321:330" ph="(...)" />
+                    <marker date="1504752368000" expanded="true" signature="322:324" ph="id...id" />
+                    <marker date="1504752368000" expanded="true" signature="331:533" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="341:343" ph="id...id" />
+                    <marker date="1504752368000" expanded="true" signature="352:356" ph="name...name" />
+                    <marker date="1504752368000" expanded="true" signature="365:369" ph="User...User" />
+                    <marker date="1504752368000" expanded="true" signature="365:434" ph="User...{&#10;          profile {&#10;            fullName&#10;          }&#10;        }" />
+                    <marker date="1504752368000" expanded="true" signature="369:434" ph="userId...{&#10;          profile {&#10;            fullName&#10;          }&#10;        }" />
+                    <marker date="1504752368000" expanded="true" signature="370:434" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="382:389" ph="profile...profile" />
+                    <marker date="1504752368000" expanded="true" signature="382:424" ph="profile...{&#10;            fullName&#10;          }" />
+                    <marker date="1504752368000" expanded="true" signature="390:424" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="404:412" ph="fullName...fullName" />
+                    <marker date="1504752368000" expanded="true" signature="443:454" ph="description...description" />
+                    <marker date="1504752368000" expanded="true" signature="463:471" ph="cookTime...cookTime" />
+                    <marker date="1504752368000" expanded="true" signature="480:485" ph="Foods...Foods" />
+                    <marker date="1504752368000" expanded="true" signature="480:525" ph="Foods...{&#10;          name&#10;        }" />
+                    <marker date="1504752368000" expanded="true" signature="486:525" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="498:500" ph="id...id" />
+                    <marker date="1504752368000" expanded="true" signature="511:515" ph="name...name" />
+                    <marker date="1504752368000" expanded="true" signature="568:839" ph="mutation...{&#10;      createRecipe (name: $name, description: $description, cookTime: $cookTime, foodIds: [1, 2, 9]) {&#10;        id&#10;      }&#10;    }" />
+                    <marker date="1504752368000" expanded="true" signature="577:675" ph="(...)" />
+                    <marker date="1504752368000" expanded="true" signature="585:591" ph="String...String" />
+                    <marker date="1504752368000" expanded="true" signature="612:615" ph="Int...Int" />
+                    <marker date="1504752368000" expanded="true" signature="631:637" ph="String...String" />
+                    <marker date="1504752368000" expanded="true" signature="651:654" ph="Int...Int" />
+                    <marker date="1504752368000" expanded="true" signature="667:673" ph="[...]" />
+                    <marker date="1504752368000" expanded="true" signature="668:671" ph="Int...Int" />
+                    <marker date="1504752368000" expanded="true" signature="676:839" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="684:696" ph="createRecipe...createRecipe" />
+                    <marker date="1504752368000" expanded="true" signature="684:833" ph="createRecipe...{&#10;        id&#10;      }" />
+                    <marker date="1504752368000" expanded="true" signature="697:812" ph="(...)" />
+                    <marker date="1504752368000" expanded="true" signature="698:702" ph="name...name" />
+                    <marker date="1504752368000" expanded="true" signature="711:726" ph="createdByUserId...createdByUserId" />
+                    <marker date="1504752368000" expanded="true" signature="746:757" ph="description...description" />
+                    <marker date="1504752368000" expanded="true" signature="773:781" ph="cookTime...cookTime" />
+                    <marker date="1504752368000" expanded="true" signature="794:801" ph="foodIds...foodIds" />
+                    <marker date="1504752368000" expanded="true" signature="794:803" ph="foodIds...[1, 2, 9]" />
+                    <marker date="1504752368000" expanded="true" signature="813:833" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="823:825" ph="id...id" />
+                    <marker date="1504752368000" expanded="true" signature="871:1063" ph="mutation...{&#10;      updateRecipe (id: $id, name: $name, description: $description, cookTime: $cookTime) {&#10;        id&#10;      }&#10;    }" />
+                    <marker date="1504752368000" expanded="true" signature="880:944" ph="(...)" />
+                    <marker date="1504752368000" expanded="true" signature="886:889" ph="Int...Int" />
+                    <marker date="1504752368000" expanded="true" signature="899:905" ph="String...String" />
+                    <marker date="1504752368000" expanded="true" signature="921:927" ph="String...String" />
+                    <marker date="1504752368000" expanded="true" signature="940:943" ph="Int...Int" />
+                    <marker date="1504752368000" expanded="true" signature="945:1063" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="953:965" ph="updateRecipe...updateRecipe" />
+                    <marker date="1504752368000" expanded="true" signature="953:1057" ph="updateRecipe...{&#10;        id&#10;      }" />
+                    <marker date="1504752368000" expanded="true" signature="966:1036" ph="(...)" />
+                    <marker date="1504752368000" expanded="true" signature="967:969" ph="id...id" />
+                    <marker date="1504752368000" expanded="true" signature="976:980" ph="name...name" />
+                    <marker date="1504752368000" expanded="true" signature="989:1000" ph="description...description" />
+                    <marker date="1504752368000" expanded="true" signature="1016:1024" ph="cookTime...cookTime" />
+                    <marker date="1504752368000" expanded="true" signature="1037:1057" ph="{...}" />
+                    <marker date="1504752368000" expanded="true" signature="1047:1049" ph="id...id" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -144,9 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>schema</find>
-      <find>re</find>
-      <find>classn</find>
       <find>classna</find>
       <find>classnam</find>
       <find>classname</find>
@@ -162,11 +164,7 @@
       <find>logout</find>
       <find>r</find>
       <find>redirc</find>
-      <find>redir</find>
-      <find>redire</find>
-      <find>redirec</find>
       <find>footer</find>
-      <find>redirect</find>
       <find>3</find>
       <find>3000</find>
       <find>clickme</find>
@@ -174,6 +172,13 @@
       <find>click</find>
       <find>click m</find>
       <find>click me</find>
+      <find>re</find>
+      <find>red</find>
+      <find>redi</find>
+      <find>redir</find>
+      <find>redire</find>
+      <find>redirec</find>
+      <find>redirect</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/fooderNavs</dir>
@@ -210,7 +215,6 @@
         <option value="$PROJECT_DIR$/src/auth/LogoutButton.js" />
         <option value="$PROJECT_DIR$/src/auth/reducer.js" />
         <option value="$PROJECT_DIR$/src/fooders/FooderDetails.js" />
-        <option value="$PROJECT_DIR$/src/recipes/RecipeCard.js" />
         <option value="$PROJECT_DIR$/src/ingredients/IngredientAdd.js" />
         <option value="$PROJECT_DIR$/src/recipes/service.js" />
         <option value="$PROJECT_DIR$/src/recipes/RecipeDetails.js" />
@@ -236,6 +240,7 @@
         <option value="$PROJECT_DIR$/src/fooderNavs/FooderHeader.js" />
         <option value="$PROJECT_DIR$/src/auth/Login.js" />
         <option value="$PROJECT_DIR$/src/recipes/RecipeList.js" />
+        <option value="$PROJECT_DIR$/src/recipes/RecipeCard.js" />
       </list>
     </option>
   </component>
@@ -456,12 +461,12 @@
       <workItem from="1503090579633" duration="21448000" />
       <workItem from="1503768189082" duration="5798000" />
       <workItem from="1503962728329" duration="1107000" />
-      <workItem from="1503969699257" duration="72077000" />
+      <workItem from="1503969699257" duration="72685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134466000" />
+    <option name="totallyTimeSpent" value="135074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1267" height="900" extended-state="6" />
@@ -471,7 +476,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21566264" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21927711" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -990,9 +995,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="54" column="55" lean-forward="true" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,18 +1007,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipes/RecipeCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/recipes/service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="563">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding>
             <marker date="1504752368000" expanded="true" signature="83:262" ph="query...{&#10;      allRecipes {&#10;        id&#10;        name&#10;        description&#10;        cookTime&#10;      }&#10;    }" />
             <marker date="1504752368000" expanded="true" signature="89:262" ph="{...}" />
@@ -1100,10 +1095,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/recipes/RecipeCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/recipes/RecipeList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="121" lean-forward="false" selection-start-line="25" selection-start-column="121" selection-end-line="25" selection-end-column="121" />
+        <state relative-caret-position="300">
+          <caret line="25" column="138" lean-forward="false" selection-start-line="25" selection-start-column="138" selection-end-line="25" selection-end-column="138" />
           <folding />
         </state>
       </provider>
