@@ -11,10 +11,10 @@ export default {
   commands: [indexCommands],
   elements: {
     addFoodLink: {
-      selector: 'nav-link[id=add-food-link]'
+      selector: '#add-food-link'
     },
     createFoodButton: {
-      selector: 'button[id="add-food-button"]'
+      selector: '#add-food-button'
     }
   }
 }

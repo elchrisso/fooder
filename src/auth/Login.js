@@ -17,6 +17,7 @@ class Login extends Component {
     }).then((response) => {
       this.props.dispatch(loginSuccess(response.data.loginUser.token))
       console.log("login success!")
+      window.location.reload()
     }).catch((error) => {
       this.props.dispatch(loginError(error.message))
       alert("Account not found, maybe you need to create one?")

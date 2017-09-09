@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { withApollo } from 'react-apollo'
 
 import { Navbar, Nav, NavItem, NavbarBrand, Button } from 'reactstrap'
-import { NavLink } from 'react-router-dom'
+import { NavLink, withRouter } from 'react-router-dom'
 
 import AuthService from '../auth/service'
 import { getAuthUser, getAuthUserSuccess, getAuthUserFail } from '../auth/actions'
@@ -14,12 +14,6 @@ class FooderHeader extends Component {
     super()
     this.state= {
       bitOState: ''
-    }
-  }
-
-  componentWillReceiveProps (nextProps) {
-    if (nextProps !== this.props) {
-      this.setState({rerender: nextProps.bitOState})
     }
   }
 
@@ -61,7 +55,6 @@ class FooderHeader extends Component {
             <NavLink className="nav-link" to={userLink}>{userLinkText}</NavLink>
           </NavItem>
         </Nav>
-        <Button type="button" onClick={(evt) => this.setState({ bitOState: "update" })}>clickMe</Button>
       </Navbar>
     )
   }
@@ -75,4 +68,6 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default withApollo(connect(mapStateToProps)(FooderHeader))
+const compWithRedux = connect(mapStateToProps)(FooderHeader)
+const compWithRouter = withRouter(compWithRedux)
+export default withApollo(compWithRouter)
