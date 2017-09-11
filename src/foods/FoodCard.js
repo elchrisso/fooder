@@ -11,7 +11,6 @@ class FoodCard extends Component {
           <CardImg top width="100%" src={require('./anApple.jpg')} className="foodImage-medium" alt="Card image cap" />
           <CardBlock>
             <CardTitle>{this.props.foodName}</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>{this.props.foodDescription}</CardText>
             <Button color="success">
               <NavLink to={`/foods/details/${this.props.foodId}`}>Food Details</NavLink>

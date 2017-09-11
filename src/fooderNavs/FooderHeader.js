@@ -10,12 +10,6 @@ import AuthService from '../auth/service'
 import { getAuthUser, getAuthUserSuccess, getAuthUserFail } from '../auth/actions'
 
 class FooderHeader extends Component {
-  constructor () {
-    super()
-    this.state= {
-      bitOState: ''
-    }
-  }
 
   componentWillMount () {
     this.props.dispatch(getAuthUser())
@@ -30,10 +24,8 @@ class FooderHeader extends Component {
   }
 
   render () {
-    console.log("rendering header nav")
     let userLink = "/fooders/login"
     let userLinkText = "Login"
-    console.log("userInfo: " + this.props.userInfo)
     if (this.props.userInfo !== null) {
       userLinkText = this.props.userInfo.profile.fullName + "'s Account"
       userLink = "/fooders/edit/" + this.props.userInfo.id

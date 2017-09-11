@@ -14,6 +14,7 @@ class RecipeAdd extends Component {
       cookTime: '',
       newIngredientId: '',
       userId: '',
+      createdByUserId: '',
       foodIds: []
     }
   }
@@ -32,7 +33,7 @@ class RecipeAdd extends Component {
   }
 
   handleAddRecipe = (evt) => {
-    //this.setState({ userId: this.props.match.params.id })
+    this.setState({ userId: this.props.match.params.id })
     evt.preventDefault()
     console.log(this.props.match.params.id)
     console.log(this.state.userId)
@@ -41,6 +42,7 @@ class RecipeAdd extends Component {
         name: this.state.name,
         description: this.state.description,
         userId: this.state.userId,
+        createdByUserId: this.state.userId,
         cookTime: this.state.cookTime,
         foodIds: this.state.foodIds
       }
