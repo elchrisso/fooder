@@ -4,6 +4,7 @@ import { graphql } from 'react-apollo'
 
 import recipesService from './service'
 import FoodersService from '../fooders/service'
+import FoodListSmall from '../foods/FoodListSmall'
 
 class RecipeAdd extends Component {
   constructor () {
@@ -57,7 +58,7 @@ class RecipeAdd extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-8">
+          <div className="col-6">
             <Form onSubmit={this.handleAddRecipe}>
               <FormGroup>
                 <Label for="recipe-name">Recipe Name</Label>
@@ -76,12 +77,15 @@ class RecipeAdd extends Component {
               </FormGroup>
             </Form>
           </div>
-          <div className="col-4">
+          <div className="col-3">
             <FormGroup>
               <Label for="food-to-add">Type an ingredient's Id and click Add</Label>
               <Input id="food-to-add" type="number" onChange={(evt) => this.setState({ newIngredientId: evt.target.value }) }/>
               <Button type="button" onClick={this.handleAddIngredient}>Add It</Button>
             </FormGroup>
+          </div>
+          <div className="col-3">
+            <FoodListSmall/>
           </div>
         </div>
       </div>
