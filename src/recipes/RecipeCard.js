@@ -14,6 +14,7 @@ class RecipeCard extends Component {
           <CardBlock>
             <CardTitle>{this.props.recipeName}</CardTitle>
             <CardSubtitle>{this.props.recipeCreator}</CardSubtitle>
+            <CardText>Prep Time: {this.props.recipeCookTime}</CardText>
             <CardText/>
             <CardText>{this.props.recipeDescription}</CardText>
             <Button color="success">

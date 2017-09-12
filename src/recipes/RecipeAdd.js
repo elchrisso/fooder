@@ -36,8 +36,6 @@ class RecipeAdd extends Component {
   handleAddRecipe = (evt) => {
     this.setState({ userId: this.props.match.params.id })
     evt.preventDefault()
-    console.log(this.props.match.params.id)
-    console.log(this.state.userId)
     this.props.mutate({
       variables: {
         name: this.state.name,
@@ -48,6 +46,7 @@ class RecipeAdd extends Component {
         foodIds: this.state.foodIds
       }
     })
+    alert("success!")
   }
 
   render () {
@@ -83,6 +82,14 @@ class RecipeAdd extends Component {
               <Input id="food-to-add" type="number" onChange={(evt) => this.setState({ newIngredientId: evt.target.value }) }/>
               <Button type="button" onClick={this.handleAddIngredient}>Add It</Button>
             </FormGroup>
+            <ul>
+              Ingredients:
+              {this.state.foodIds.map((foodId) => {
+                return (
+                  <li>{foodId}</li>
+                )
+              })}
+            </ul>
           </div>
           <div className="col-3">
             <FoodListSmall/>

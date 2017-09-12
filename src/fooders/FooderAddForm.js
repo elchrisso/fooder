@@ -45,7 +45,7 @@ class FooderAddForm extends Component {
         <FormGroup>
           <Button type="submit" color="primary">Create Account</Button>
         </FormGroup>
-        <Link to="/login">Back to Login</Link>
+        <Link to="/fooders/login">Back to Login</Link>
       </Form>
     )
   }

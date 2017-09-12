@@ -12,12 +12,12 @@ class FoodListSmall extends Component {
     }
     return (
       <ul>
+        List of Existing Foods:
         {this.props.data.allFoods.map((food) => {
           return (
             <li>{food.name} , {food.id}</li>
           )
         })}
-        )
       </ul>
     )
   }
