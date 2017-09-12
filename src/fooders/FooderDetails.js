@@ -5,6 +5,7 @@ import { Redirect } from 'react-router-dom'
 
 import FooderService from './service'
 import LogoutButton from '../auth/LogoutButton'
+import RecipeListSmall from '../recipes/RecipeListSmall'
 
 class FooderDetails extends Component {
   constructor() {
@@ -49,6 +50,7 @@ class FooderDetails extends Component {
       <div>
         <Row>
           <Col className="col-8">
+            <h4>Fooder Account Info</h4>
             <Form onSubmit={this.handleSubmitAccountEdits}>
               <FormGroup>
                 <Label to="fullName">Name</Label>
@@ -58,6 +60,8 @@ class FooderDetails extends Component {
             </Form>
           </Col>
           <Col className="col-4">
+            <h4>Created Recipes</h4>
+            <RecipeListSmall/>
             <LogoutButton/>
           </Col>
         </Row>
