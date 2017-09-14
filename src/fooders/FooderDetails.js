@@ -19,7 +19,7 @@ class FooderDetails extends Component {
     evt.preventDefault()
     this.props.mutate({
       variables: {
-        id: this.props.data.User.id,
+        userId: this.props.data.User.id,
         ...this.state
       },
       refetchQueries: [{

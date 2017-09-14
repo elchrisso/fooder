@@ -38,8 +38,8 @@ class foodersService {
   `
 
   updateProfile = gql`
-    mutation ($id: Int!, $fullName: String) {
-      updateProfile (id: $id, fullName: $fullName) {
+    mutation ($userId: Int!, $fullName: String) {
+      updateProfile (userId: $userId, fullName: $fullName) {
         id
         fullName
       }
