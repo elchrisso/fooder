@@ -11,7 +11,9 @@ class FooderDetails extends Component {
   constructor() {
     super()
     this.state = {
-      fullName: ''
+      fullName: '',
+      fullAddress: '',
+      phoneNumber: ''
     }
   }
 
@@ -55,6 +57,14 @@ class FooderDetails extends Component {
               <FormGroup>
                 <Label to="fullName">Name</Label>
                 <Input type="text" id="fullName" defaultValue={this.props.data.User.profile.fullName} onChange={(evt) => this.setState({ fullName: evt.target.value }) }/>
+              </FormGroup>
+              <FormGroup>
+                <Label to="fullAddress">Address</Label>
+                <Input type="text" defaultValue={this.props.data.User.profile.fullAddress} onChange={(evt) => this.setState({ fullAddress: evt.target.value }) }/>
+              </FormGroup>
+              <FormGroup>
+                <Label to="phoneNumber">Phone Number</Label>
+                <Input id="phoneNumber" type="text" defaultValue={this.props.data.User.profile.phoneNumber} onChange={(evt) => this.setState({ phoneNumber: evt.target.value }) }/>
               </FormGroup>
               <Button color="success">Submit Changes</Button>
             </Form>

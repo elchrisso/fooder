@@ -22,6 +22,7 @@ class foodersService {
         profile {
           fullName
           fullAddress
+          phoneNumber
         }
       }
     }
@@ -38,10 +39,12 @@ class foodersService {
   `
 
   updateProfile = gql`
-    mutation ($userId: Int!, $fullName: String) {
-      updateProfile (userId: $userId, fullName: $fullName) {
+    mutation ($userId: Int!, $fullName: String, $fullAddress: String, $phoneNumber: String) {
+      updateProfile (userId: $userId, fullName: $fullName, fullAddress: $fullAddress, phoneNumber: $phoneNumber) {
         id
         fullName
+        fullAddress
+        phoneNumber
       }
     }
   `
