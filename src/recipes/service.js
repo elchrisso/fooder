@@ -9,6 +9,7 @@ class recipesService {
         description
         cookTime
         User {
+          id
           profile {
             fullName
           }

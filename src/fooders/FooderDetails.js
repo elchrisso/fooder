@@ -71,7 +71,7 @@ class FooderDetails extends Component {
           </Col>
           <Col className="col-4">
             <h4>Created Recipes</h4>
-            <RecipeListSmall/>
+            <RecipeListSmall fooderId={this.props.data.User.id}/>
             <LogoutButton/>
           </Col>
         </Row>
