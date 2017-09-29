@@ -13,19 +13,14 @@ class RecipeListSmall extends Component {
       return <p>Loading list of recipes...</p>
     }
 
-    if (this.props.data.allRecipes) {
-      recipes = this.props.data.allRecipes
+    if (this.props.data.getRecipesByUserId) {
+      recipes = this.props.data.getRecipesByUserId
     }
 
     return (
       <div>
         {recipes.map((recipe, key) => {
-          if (recipe.User.id === this.props.fooderId) {
-            console.log(recipe.User.id + " " + this.props.fooderId)
-            return (
-              <p key={key}>{recipe.name}, Time to prepare: {recipe.cookTime}</p>
-            )
-          }
+          return (<p key={key}>{recipe.name}, Time to prepare: {recipe.cookTime}</p>)
         })}
       </div>
 
@@ -37,5 +32,8 @@ RecipeListSmall.propTypes = {
   fooderId: PropTypes.number.isRequired
 }
 
-const withUserRecipes = graphql(RecipesService.allRecipes)(RecipeListSmall)
+const withUserRecipes = graphql(RecipesService.getRecipesByUserId , {options: (ownProps) => ({
+  variables: { id: ownProps.fooderId },
+  fetchPolicy: 'network-only'
+})})(RecipeListSmall)
 export default withUserRecipes

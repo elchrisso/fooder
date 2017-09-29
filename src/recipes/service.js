@@ -38,6 +38,17 @@ class recipesService {
     }
   `
 
+  getRecipesByUserId = gql`
+    query ($id: Int!) {
+      getRecipesByUserId (id: $id) {
+        id
+        name
+        description
+        createdAt
+      }
+    }
+  `
+
   addRecipe = gql`
     mutation ($name: String!, $createdByUserId: Int! $description: String!, $cookTime: Int!, $foodIds: [Int!]!) {
       createRecipe (name: $name, createdByUserId: $createdByUserId, description: $description, cookTime: $cookTime, foodIds: $foodIds) {
