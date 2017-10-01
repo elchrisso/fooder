@@ -45,6 +45,7 @@ class recipesService {
         name
         description
         createdAt
+        cookTime
       }
     }
   `
