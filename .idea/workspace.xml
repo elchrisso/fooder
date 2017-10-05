@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f220c401-6a45-4298-a1b8-640cdbe7b66b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/recipes/RecipeListSmall.js" afterPath="$PROJECT_DIR$/src/recipes/RecipeListSmall.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/recipes/service.js" afterPath="$PROJECT_DIR$/src/recipes/service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fooderFeeder/FeedItem.js" afterPath="$PROJECT_DIR$/src/fooderFeeder/FeedItem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/foods/FoodAdd.js" afterPath="$PROJECT_DIR$/src/foods/FoodAdd.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,126 +21,34 @@
     <splitter split-orientation="horizontal" split-proportion="0.52242523">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/recipes/service.js">
+          <file leaf-file-name="FoodAdd.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/foods/FoodAdd.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="614">
-                  <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-                  <folding>
-                    <marker date="1506894586000" expanded="true" signature="83:275" ph="query...{&#10;      allRecipes {&#10;        id&#10;        name&#10;        description&#10;        cookTime&#10;        User {&#10;          profile {&#10;            fullName&#10;          }&#10;        }&#10;      }&#10;    }" />
-                    <marker date="1506894586000" expanded="true" signature="89:275" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="97:107" ph="allRecipes...allRecipes" />
-                    <marker date="1506894586000" expanded="true" signature="97:269" ph="allRecipes...{&#10;        id&#10;        name&#10;        description&#10;        cookTime&#10;        User {&#10;          profile {&#10;            fullName&#10;          }&#10;        }&#10;      }" />
-                    <marker date="1506894586000" expanded="true" signature="108:269" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="118:120" ph="id...id" />
-                    <marker date="1506894586000" expanded="true" signature="129:133" ph="name...name" />
-                    <marker date="1506894586000" expanded="true" signature="142:153" ph="description...description" />
-                    <marker date="1506894586000" expanded="true" signature="162:170" ph="cookTime...cookTime" />
-                    <marker date="1506894586000" expanded="true" signature="179:183" ph="User...User" />
-                    <marker date="1506894586000" expanded="true" signature="179:261" ph="User...{&#10;          profile {&#10;            fullName&#10;          }&#10;        }" />
-                    <marker date="1506894586000" expanded="true" signature="184:261" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="196:198" ph="id...id" />
-                    <marker date="1506894586000" expanded="true" signature="209:216" ph="profile...profile" />
-                    <marker date="1506894586000" expanded="true" signature="209:251" ph="profile...{&#10;            fullName&#10;          }" />
-                    <marker date="1506894586000" expanded="true" signature="217:251" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="231:239" ph="fullName...fullName" />
-                    <marker date="1506894586000" expanded="true" signature="301:552" ph="query...{&#10;      Recipe (id: $id) {&#10;        id&#10;        name&#10;        User {&#10;          profile {&#10;            fullName&#10;          }&#10;        }&#10;        description&#10;        cookTime&#10;        Foods {&#10;          id&#10;          name&#10;        }&#10;      }&#10;    }" />
-                    <marker date="1506894586000" expanded="true" signature="307:318" ph="(...)" />
-                    <marker date="1506894586000" expanded="true" signature="313:316" ph="Int...Int" />
-                    <marker date="1506894586000" expanded="true" signature="319:552" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="327:333" ph="Recipe...Recipe" />
-                    <marker date="1506894586000" expanded="true" signature="327:546" ph="Recipe...{&#10;        id&#10;        name&#10;        User {&#10;          profile {&#10;            fullName&#10;          }&#10;        }&#10;        description&#10;        cookTime&#10;        Foods {&#10;          id&#10;          name&#10;        }&#10;      }" />
-                    <marker date="1506894586000" expanded="true" signature="334:343" ph="(...)" />
-                    <marker date="1506894586000" expanded="true" signature="335:337" ph="id...id" />
-                    <marker date="1506894586000" expanded="true" signature="344:546" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="354:356" ph="id...id" />
-                    <marker date="1506894586000" expanded="true" signature="365:369" ph="name...name" />
-                    <marker date="1506894586000" expanded="true" signature="378:382" ph="User...User" />
-                    <marker date="1506894586000" expanded="true" signature="378:447" ph="User...{&#10;          profile {&#10;            fullName&#10;          }&#10;        }" />
-                    <marker date="1506894586000" expanded="true" signature="383:447" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="395:402" ph="profile...profile" />
-                    <marker date="1506894586000" expanded="true" signature="395:437" ph="profile...{&#10;            fullName&#10;          }" />
-                    <marker date="1506894586000" expanded="true" signature="403:437" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="417:425" ph="fullName...fullName" />
-                    <marker date="1506894586000" expanded="true" signature="456:467" ph="description...description" />
-                    <marker date="1506894586000" expanded="true" signature="476:484" ph="cookTime...cookTime" />
-                    <marker date="1506894586000" expanded="true" signature="493:498" ph="Foods...Foods" />
-                    <marker date="1506894586000" expanded="true" signature="493:538" ph="Foods...{&#10;          id&#10;          name&#10;        }" />
-                    <marker date="1506894586000" expanded="true" signature="499:538" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="511:513" ph="id...id" />
-                    <marker date="1506894586000" expanded="true" signature="524:528" ph="name...name" />
-                    <marker date="1506894586000" expanded="true" signature="590:739" ph="query...{&#10;      getRecipesByUserId (id: $id) {&#10;        id&#10;        name&#10;        description&#10;        createdAt&#10;      }&#10;    }" />
-                    <marker date="1506894586000" expanded="true" signature="596:607" ph="(...)" />
-                    <marker date="1506894586000" expanded="true" signature="602:605" ph="Int...Int" />
-                    <marker date="1506894586000" expanded="true" signature="608:739" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="616:634" ph="getRecipesByUserId...getRecipesByUserId" />
-                    <marker date="1506894586000" expanded="true" signature="616:733" ph="getRecipesByUserId...{&#10;        id&#10;        name&#10;        description&#10;        createdAt&#10;      }" />
-                    <marker date="1506894586000" expanded="true" signature="635:644" ph="(...)" />
-                    <marker date="1506894586000" expanded="true" signature="636:638" ph="id...id" />
-                    <marker date="1506894586000" expanded="true" signature="645:733" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="655:657" ph="id...id" />
-                    <marker date="1506894586000" expanded="true" signature="666:670" ph="name...name" />
-                    <marker date="1506894586000" expanded="true" signature="679:690" ph="description...description" />
-                    <marker date="1506894586000" expanded="true" signature="699:708" ph="createdAt...createdAt" />
-                    <marker date="1506894586000" expanded="true" signature="717:725" ph="cookTime...cookTime" />
-                    <marker date="1506894586000" expanded="true" signature="768:1039" ph="mutation...{&#10;      createRecipe (name: $name, createdByUserId: $createdByUserId, description: $description, cookTime: $cookTime, foodIds: $foodIds) {&#10;        id&#10;      }&#10;    }" />
-                    <marker date="1506894586000" expanded="true" signature="777:875" ph="(...)" />
-                    <marker date="1506894586000" expanded="true" signature="785:791" ph="String...String" />
-                    <marker date="1506894586000" expanded="true" signature="812:815" ph="Int...Int" />
-                    <marker date="1506894586000" expanded="true" signature="831:837" ph="String...String" />
-                    <marker date="1506894586000" expanded="true" signature="851:854" ph="Int...Int" />
-                    <marker date="1506894586000" expanded="true" signature="867:873" ph="[...]" />
-                    <marker date="1506894586000" expanded="true" signature="868:871" ph="Int...Int" />
-                    <marker date="1506894586000" expanded="true" signature="876:1039" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="884:896" ph="createRecipe...createRecipe" />
-                    <marker date="1506894586000" expanded="true" signature="884:1033" ph="createRecipe...{&#10;        id&#10;      }" />
-                    <marker date="1506894586000" expanded="true" signature="897:1012" ph="(...)" />
-                    <marker date="1506894586000" expanded="true" signature="898:902" ph="name...name" />
-                    <marker date="1506894586000" expanded="true" signature="911:926" ph="createdByUserId...createdByUserId" />
-                    <marker date="1506894586000" expanded="true" signature="946:957" ph="description...description" />
-                    <marker date="1506894586000" expanded="true" signature="973:981" ph="cookTime...cookTime" />
-                    <marker date="1506894586000" expanded="true" signature="994:1001" ph="foodIds...foodIds" />
-                    <marker date="1506894586000" expanded="true" signature="1013:1033" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="1023:1025" ph="id...id" />
-                    <marker date="1506894586000" expanded="true" signature="1071:1263" ph="mutation...{&#10;      updateRecipe (id: $id, name: $name, description: $description, cookTime: $cookTime) {&#10;        id&#10;      }&#10;    }" />
-                    <marker date="1506894586000" expanded="true" signature="1080:1144" ph="(...)" />
-                    <marker date="1506894586000" expanded="true" signature="1086:1089" ph="Int...Int" />
-                    <marker date="1506894586000" expanded="true" signature="1099:1105" ph="String...String" />
-                    <marker date="1506894586000" expanded="true" signature="1121:1127" ph="String...String" />
-                    <marker date="1506894586000" expanded="true" signature="1140:1143" ph="Int...Int" />
-                    <marker date="1506894586000" expanded="true" signature="1145:1263" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="1153:1165" ph="updateRecipe...updateRecipe" />
-                    <marker date="1506894586000" expanded="true" signature="1153:1257" ph="updateRecipe...{&#10;        id&#10;      }" />
-                    <marker date="1506894586000" expanded="true" signature="1166:1236" ph="(...)" />
-                    <marker date="1506894586000" expanded="true" signature="1167:1169" ph="id...id" />
-                    <marker date="1506894586000" expanded="true" signature="1176:1180" ph="name...name" />
-                    <marker date="1506894586000" expanded="true" signature="1189:1200" ph="description...description" />
-                    <marker date="1506894586000" expanded="true" signature="1216:1224" ph="cookTime...cookTime" />
-                    <marker date="1506894586000" expanded="true" signature="1237:1257" ph="{...}" />
-                    <marker date="1506894586000" expanded="true" signature="1247:1249" ph="id...id" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RecipeDetails.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/recipes/RecipeDetails.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+                <state relative-caret-position="330">
+                  <caret line="25" column="143" lean-forward="false" selection-start-line="25" selection-start-column="143" selection-end-line="25" selection-end-column="143" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FoodDetails.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/foods/FoodDetails.js">
+          <file leaf-file-name="FooderFeed.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/fooderFeeder/FooderFeed.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FoodCard.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/foods/FoodCard.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -149,24 +57,24 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="RecipeListSmall.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/recipes/RecipeListSmall.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="26" column="89" lean-forward="false" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
-                  <folding>
-                    <element signature="e#0#40#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="LoginForm.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/auth/LoginForm.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="30">
                   <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FeedItem.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/fooderFeeder/FeedItem.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -227,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wallaby.js" />
         <option value="$PROJECT_DIR$/src/app/App.test.js" />
         <option value="$PROJECT_DIR$/src/app/reducer.js" />
         <option value="$PROJECT_DIR$/src/store.js" />
@@ -254,7 +161,6 @@
         <option value="$PROJECT_DIR$/globals.js" />
         <option value="$PROJECT_DIR$/nightwatch.conf.js" />
         <option value="$PROJECT_DIR$/tests/runner.js" />
-        <option value="$PROJECT_DIR$/src/foods/FoodAdd.js" />
         <option value="$PROJECT_DIR$/tests/e2e/does-show-food-add-button.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.env" />
@@ -278,6 +184,8 @@
         <option value="$PROJECT_DIR$/src/fooders/FooderDetails.js" />
         <option value="$PROJECT_DIR$/src/recipes/service.js" />
         <option value="$PROJECT_DIR$/src/recipes/RecipeListSmall.js" />
+        <option value="$PROJECT_DIR$/src/foods/FoodAdd.js" />
+        <option value="$PROJECT_DIR$/src/fooderFeeder/FeedItem.js" />
       </list>
     </option>
   </component>
@@ -388,7 +296,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
+              <option name="myItemId" value="fooderFeeder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fooder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fooder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,12 +462,12 @@
       <workItem from="1503962728329" duration="1107000" />
       <workItem from="1503969699257" duration="85094000" />
       <workItem from="1505512967833" duration="2139000" />
-      <workItem from="1506451740187" duration="5336000" />
+      <workItem from="1506451740187" duration="8595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154958000" />
+    <option name="totallyTimeSpent" value="158217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -591,19 +517,17 @@
           <url>file://$PROJECT_DIR$/src/fooderNavs/FooderFooter.js</url>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/recipes/RecipeDetails.js</url>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/foods/anApple.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ingredients/IngredientAdd.js" />
-    <entry file="file://$PROJECT_DIR$/tsconfig.json" />
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -636,13 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/foods/FoodAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="41" column="51" lean-forward="false" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -741,21 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/foods/FoodCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/foods/FoodList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -814,16 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/recipes/RecipeEdit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -836,23 +728,6 @@
         <state relative-caret-position="645">
           <caret line="47" column="27" lean-forward="false" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fooders/FooderAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipes/RecipeAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="47" column="6" lean-forward="true" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1000,7 +875,7 @@
         <state relative-caret-position="445">
           <caret line="73" column="56" lean-forward="false" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1025,14 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="51" lean-forward="false" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auth/LoginForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1137,21 +1004,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipes/RecipeDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/foods/FoodDetails.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/recipes/RecipeDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fooders/FooderAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/recipes/RecipeAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="81" column="109" lean-forward="true" selection-start-line="81" selection-start-column="109" selection-end-line="81" selection-end-column="109" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1159,6 +1068,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="26" column="89" lean-forward="false" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auth/LoginForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/foods/FoodAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="143" lean-forward="false" selection-start-line="25" selection-start-column="143" selection-end-line="25" selection-end-column="143" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fooderFeeder/FooderFeed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/foods/FoodCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fooderFeeder/FeedItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>

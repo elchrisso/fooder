@@ -7,7 +7,7 @@ class FeedItem extends Component {
       <div>
         <Media>
           <Media left top href="#">
-            <Media object data-src="centrism.png/64x64" alt="Generic placeholder image" />
+            <Media object src={require('./concentrism.png')} alt="Generic placeholder image" />
           </Media>
           <Media body>
             <Media heading>

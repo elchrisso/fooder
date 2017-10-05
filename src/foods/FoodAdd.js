@@ -23,7 +23,7 @@ class FoodAdd extends Component {
     }).then(() => {
       alert("Food Added!")
     }).catch(() => {
-      alert("error")
+      alert("Looks like that food already exists!  You can either use the one that already exists, or else create a food with a different name.")
     })
   }
 
