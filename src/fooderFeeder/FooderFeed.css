@@ -1,4 +1,9 @@
 .Feed {
-  max-width: 80%;
+  max-width: 60%;
   content-align: center;
+}
+
+.comment-card {
+  text-align: left;
+
 }
